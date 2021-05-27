@@ -1,0 +1,15 @@
+{
+  "name": "prototipo",
+  "version": "1.0.0",
+  "description": "Bot-hipotecario",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Alejandro Herrera",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.0"
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Paino-Hip</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body style="background:	white;">
+    <!--div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div-->
+    <div class="row head">
+        <div class="col s4"></div>
+        <div class="col s4">
+          <div class="card-panel z-depth-3"><img src="logo.png" height="40" alt="logo"></div>
+        </div>
+        <div class="col s4"></div>
+    </div>
+    
+    <div class="row">
+        <h5 class="red darken-3"><span class="white-text">Documentos</span></h5>
+        <div class="col s3">
+            <form action="#">
+                <div class="file-field input-field">
+                  <div class="red darken-2 btn">
+                    <span>Minuta</span>
+                    <input type="file" multiple>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="">
+                  </div>
+                </div>
+            </form>
+        </div>
+        <div class="col s3">
+            <div class="file-field input-field">
+                <div class="red darken-2 btn">
+                  <span>Clausulas</span>
+                  <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+        </div>
+        <div class="col s3">
+            <div class="file-field input-field">
+                <div class="red darken-2 btn">
+                  <span>Banco</span>
+                  <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+        </div>
+        <div class="col s3">
+            <div class="file-field input-field">
+                <div class="red darken-2 btn">
+                  <span>Imágenes</span>
+                  <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s9">
+        </div>
+        <div class="col s3">
+            <div class="row">
+                <div class="col s1">
+                    <a class="waves-effect waves-light red darken-2 btn">Cancelar</a>
+                </div>
+                <div class="col s1 push-s4">
+                    <a class="waves-effect waves-light red darken-2 btn">Aceptar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <h5 class="red darken-3"><span class="white-text">Comparecientes</span></h5>
+        <div class="col s4">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nombre y Apellido</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Nombre1 Apellido1</td>
+                </tr>
+                <tr>
+                    <td>Nombre1 Apellido1</td>
+                </tr>
+                <tr>
+                    <td>Nombre1 Apellido1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col s8">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="nombre" type="text" class="validate">
+                            <label for="nombre">Nombre y Apellido</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="nacionalidad" type="text" class="validate">
+                            <label for="nacionalidad">Nacionalidad</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="edo_civil" type="text" class="validate">
+                            <label for="edo_civil">Estado Civil</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="domicilio" type="text" class="validate">
+                            <label for="domicilio">Domicilio</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="profesion" type="text" class="validate">
+                            <label for="profesion">Profesion</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h5 class="red darken-3"><span class="white-text">Datos del Banco</span></h5>
+        <!--div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="nombre_banco" type="text" class="validate">
+                        <label for="nombre_banco">Banco</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="ruc_banco" type="text" class="validate">
+                        <label for="ruc_banco">RUC</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="dom_banco" type="text" class="validate">
+                        <label for="dom_banco">Domicilio</label>
+                    </div>
+                </div>
+            </form>
+        </div-->
+    </div>
+
+    <div class="row">
+        <h5 class="red darken-3"><span class="white-text">Datos de la Inmobiliaria</span></h5>
+        <!--div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="nombre_inm" type="text" class="validate">
+                        <label for="nombre_inm">Inmobiliaria</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="ruc_inm" type="text" class="validate">
+                        <label for="ruc_inm">RUC</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="dom_inm" type="text" class="validate">
+                        <label for="dom_inm">Domicilio</label>
+                    </div>
+                </div>
+            </form>
+        </div-->
+    </div>
+
+    <div class="row">
+        <div class="col s1 push-s10">
+            <a class="waves-effect waves-light red darken-2 btn">Imprimir</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

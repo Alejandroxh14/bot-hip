@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <title>Paino-Hip</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body class="">
+    <!--div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div-->
+    <div class="container mx-auto">
+        <div class="flex justify-cente mt-3">
+            <div class="md:w-2/6"></div>
+            <div class="md:w-2/6">
+                <div class="card-panel z-depth-3 mt-4 "><img src="logo.png" height="40" alt="logo"></div>
+            </div>
+
+            <div class="grid grid-cols-1 flex justify-center xs: md:w-2/6">
+                <div class="flex justify-center">
+                    <img class="inline object-cover w-16 h-16 mr-2 rounded-full" src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Profile image"/>
+                </div>
+                <div class="inline-block px-10 text-red-700">  
+                   <select class=" w-full h-10 pl-3 pr-6 bg-white text-base font-medium  border  appearance-none  rounded-full tracking-wide uppercase border border-blue cursor-pointer hover:bg-red-700 hover:text-white" placeholder="Regular input"">
+                      <option  >Inmobiliaria Miraflores</option>
+                      <option  >Inmobiliaria 2000</option>
+                      <option  >Inmobiliara Santa Paula</option>
+                    </select>
+                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none ">
+                      <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="content-center bg-gray-800 text-white text-center mt-10 font-black font-mono py-2 rounded-full ">
+            DOCUMENTACIÓN
+        </div>
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 mt-3">
+            <div class="">
+
+                <div class="">
+                    <form class="w-4/5 mb-4 ml-7">
+                        <div id = "line-color-alert-minuta" class="flex items-center border-b border-teal-500 py-2 ">
+                            <input id = 'name-selector-minuta' class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nombre del Archivo" aria-label="Full name">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="flex w-full items-center justify-center bg-grey-lighter">
+                    <label class="w-64 flex flex-col items-center px-4 py-6 bg-white text-red-700 rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-gray-800 hover:text-white">
+                        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                        </svg>
+                        <span class="mt-2 text-base leading-normal">Minuta</span>
+                        <input type='file' id="file-selector-minuta" multiple class="hidden" />
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="">
+
+                <div class="">
+                    <form class="w-4/5 mb-4 ml-7">
+                        <div id = "line-color-alert-clausula" class="flex items-center border-b border-teal-500 py-2">
+                            <input id = 'name-selector-clausula' class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nombre del Archivo" aria-label="Full name">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="flex w-full items-center justify-center bg-grey-lighter">
+                    <label class="w-64 flex flex-col items-center px-4 py-6 bg-white text-red-700 rounded-lg shadow-lg tracking-wide uppercase border border cursor-pointer hover:bg-gray-800 hover:text-white">
+                        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                        </svg>
+                        <span class="mt-2 text-base leading-normal">Cláusulas</span>
+                        <input type='file' id="file-selector-clausula" multiple class="hidden" />
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="">
+                
+                <div class="">
+                    <form class="w-4/5 mb-4 ml-7">
+                        <div  id = "line-color-alert-contrato" class="flex items-center border-b border-teal-500 py-2">
+                            <input  id = 'name-selector-contrato' class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nombre del Archivo" aria-label="Full name">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex w-full items-center justify-center bg-grey-lighter">
+                    <label class="w-64 flex flex-col items-center px-4 py-6 bg-white text-red-700 rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-gray-800 hover:text-white">
+                        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                        </svg>
+                        <span class="mt-2 text-base leading-normal">Contrato</span>
+                        <input type='file' id="file-selector-contrato" multiple class="hidden" />
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="">
+
+                <div class="">
+                    <form class="w-4/5 mb-4 ml-7">
+                        <div id = "line-color-alert-imagenes" class="flex items-center border-b border-teal-500 py-2">
+                            <input  id = 'name-selector-imagenes' class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nombre del Archivo" aria-label="Full name">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="flex w-full items-center justify-center bg-grey-lighter">
+                    <label class="w-64 flex flex-col items-center px-4 py-6 bg-white text-red-700 rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-gray-800 hover:text-white">
+                        <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                        </svg>
+                        <span class="mt-2 text-base leading-normal">Imágenes</span>
+                        <input type='file' id="file-selector-imagenes" multiple class="hidden" />
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 mt-10">
+
+            <div>
+            </div>
+
+            <div class="flex justify-center">
+                <button id = "click-selector-procesar" class="bg-red-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded w-2/4 shadow-2xl">
+                    Procesar
+                </button>
+            </div>
+
+            <div>
+            </div>
+
+        </div>
+
+        <div class="content-center bg-gray-800 text-white text-center mt-10 font-black font-mono py-2 rounded-full">
+            COMPARECIENTES
+        </div>
+
+        <div class="grid md:grid-cols-2">
+
+            <div class="w-full max-w-screen-xl mx-auto px-6">
+                <div class="flex justify-center p-4 px-3 py-10">
+                    <div class="w-full max-w-md">
+                        <div class="bg-white shadow-md rounded-lg px-3 py-2 mb-4 shadow-2xl">
+                            <div class="block text-white text-lg font-semibold py-3 px-3 -mx-3 mb-6 rounded-t-lg bg-gray-800">
+                                Item List
+                            </div>
+                            <div class="flex items-center bg-gray-200 rounded-md">
+                                <div class="pl-2">
+                                    <svg class="fill-current text-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path class="heroicon-ui"
+                                            d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                    </svg>
+                                </div>
+                                <input
+                                    class="w-full rounded-md bg-gray-200 text-gray-700 leading-tight focus:outline-none py-2 px-2"
+                                    id="search" type="text" placeholder="Search teams or members">
+                            </div>
+                            <div class="py-3 text-sm">
+                                <div class="flex justify-start cursor-pointer text-gray-700 hover:text-white hover:bg-gray-800 rounded-md px-2 py-2 my-2">
+                                    <span class="bg-gray-800 h-2 w-2 m-2 rounded-full"></span>
+                                    <div id="name-click-1"class="flex-grow font-medium px-2">Alejandro Herrera</div>
+                                    <div class="text-sm font-normal text-gray-500 hover:text-white tracking-wide">Comprador</div>
+                                </div>
+                                <div class="flex justify-start cursor-pointer text-gray-700 hover:text-white hover:bg-gray-800 rounded-md px-2 py-2 my-2">
+                                    <span class="bg-gray-800 h-2 w-2 m-2 rounded-full"></span>
+                                    <div id="name-click-2" class="flex-grow font-medium px-2">Carlos González</div>
+                                    <div class="text-sm font-normal text-gray-500 hover:text-white tracking-wide">Comprador</div>
+                                </div>
+                                <div class="flex justify-start cursor-pointer text-gray-700 hover:text-white hover:bg-red-700 rounded-md px-2 py-2 my-2">
+                                    <span class="bg-red-700 h-2 w-2 m-2 rounded-full"></span>
+                                    <div id="name-click-3" class="flex-grow font-medium px-2">Leander Miranda</div>
+                                    <div class="text-sm font-normal text-gray-500 hover:text-white tracking-wide">Vendedor</div>
+                                </div>
+                                <div class="flex justify-start cursor-pointer text-gray-700 hover:text-white hover:bg-gray-800 rounded-md px-2 py-2 my-2">
+                                    <span class="bg-gray-800 h-2 w-2 m-2 rounded-full"></span>
+                                    <div id="name-click-4" class="flex-grow font-medium px-2">Barak Obama</div>
+                                    <div class="text-sm font-normal text-gray-500 hover:text-white tracking-wide">Funcionario (Banco)</div>
+                                </div>
+                                <div class="flex justify-start cursor-pointer text-gray-700 hover:text-white hover:bg-red-700 rounded-md px-2 py-2 my-2">
+                                    <span class="bg-red-700 h-2 w-2 m-2 rounded-full"></span>
+                                    <div id="name-click-5" class="flex-grow font-medium px-2">Angela Merkel</div>
+                                    <div class="text-sm font-normal text-gray-500 hover:text-white tracking-wide">Funcionario (Inmobiliaria)</div>
+                                </div>
+                            </div>
+                            <div class="block bg-red-700 text-sm text-right py-2 px-3 -mx-3 -mb-2 rounded-b-lg">
+                                <button id = "process-btn" class="hover:bg-white hover:text-red-700 text-white font-bold py-2 px-4 rounded">
+                                    Procesar 
+                                </button>
+                                <button class="hover:bg-white hover:text-red-700 text-white font-bold py-2 px-4 rounded">
+                                    Borrar
+                                </button>
+                                <button class="hover:bg-white hover:text-gray-800 text-white font-bold py-2 px-4 rounded">
+                                    Guardar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id = "res" class="my-auto">
+
+                <form class="w-4/5 mb-4 ml-7">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id = "compa-nombre" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nombre" aria-label="Full name">
+                    </div>
+                </form>
+
+                <form class="w-4/5 mb-4 ml-7">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id = "compa-nacionalidad" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nacionalidad" aria-label="Full name">
+                    </div>
+                </form>
+
+                <form class="w-4/5 mb-4 ml-7">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id = "compa-estadocivil" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Estado Civil" aria-label="Full name">
+                    </div>
+                </form>
+
+                <form class="w-4/5 mb-4 ml-7">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id = "compa-profesion" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Profesion" aria-label="Full name">
+                    </div>
+                </form>
+
+                <form class="w-4/5 mb-4 ml-7">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id = "compa-domicilio" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Domicilio" aria-label="Full name">
+                    </div>
+                </form>
+
+                <form class="w-4/5 mb-4 ml-7">
+                    <div class="flex items-center border-b border-teal-500 py-2">
+                        <input id = "compa-dni" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="DNI" aria-label="Full name">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-5 mb-20">
+            <div>
+                <div class="content-center bg-gray-800 text-white text-center mt-3 font-black font-mono py-2 rounded-full">
+                    DATOS DEL BANCO
+                </div>
+
+                <div class="grid flex justify-center">
+                
+
+                    <div class="max-w-sm rounded overflow-hidden mt-5 shadow-2xl">
+                        <div class="px-6 py-4">
+                            <div id = "process-banco-nombre" contenteditable="true" class="font-bold text-xl mb-2">BANCO INTERNACIONAL DE PERÚ</div>
+                            <hr>
+                            <p id= "process-banco-ruc" contenteditable="true" >
+                                <b>RUC: </b>  20100053455
+                            </p>
+                            <p id= "process-banco-domicilio" contenteditable="true" class="text-gray-700 text-base">
+                                <b> DOMICILIO:  </b> AVENIDA CAMINO REAL NUMERO 390, TORRE CENTRAL, PISO 17, OFICINA 1701, DISTRITO DE SAN ISIDRO, PROVINCIA Y DEPARTAMENTO DE LIMA
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           
+            <div>
+                <div  class="content-center bg-gray-800 text-white text-center mt-3 font-black font-mono py-2 rounded-full">
+                    DATOS DE LA INMOBILIARIA
+                </div>
+
+                <div class="grid flex justify-center">
+                
+
+                    <div class="max-w-sm rounded overflow-hidden mt-5 shadow-2xl">
+                        <div class="px-6 py-4">
+                            <div id = "process-inmobiliaria-nombre" contenteditable="true" class="font-bold text-xl mb-2">PAZ CENTENARIO S.A</div>
+                            <hr>
+                            <p id = "process-inmobiliaria-ruc" contenteditable="true" >
+                                <b>RUC: </b>  20518023579
+                            </p>
+                            <p  id = "process-inmobiliaria-domicilio" contenteditable="true" class="text-gray-700 text-base">
+                                <b> DOMICILIO:  </b> AVENIDA CAMINO REAL NUMERO 390, TORRE CENTRAL, PISO 17, OFICINA 1701, DISTRITO DE SAN ISIDRO, PROVINCIA Y DEPARTAMENTO DE LIMA
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <!--<div>
+                <div class="content-center bg-gray-800 text-white text-center mt-3 font-black font-mono py-2 rounded-full">
+                    OPCIONES
+                </div>
+
+                <div class="grid flex justify-center">
+            
+                    <div class="max-w-sm rounded overflow-hidden mt-5 shadow-2xl">
+                        <div class="px-6 py-4">
+                            <div class="flex justify-center mt-5 ">
+                                <button id = "process-btn-banco" class="bg-red-700 hover:bg-gray-800 text-white  hover:text-white hover:border-red-700 font-bold shadow-lg py-2 px-4 rounded w-40 ">
+                                    Procesar
+                                </button>
+                            </div>
+
+                            <div class="flex justify-center mt-5 ">
+                                <button id = "process-btn-banco" class="bg-red-700 hover:bg-gray-800 text-white  hover:text-white hover:border-red-700 font-bold shadow-lg py-2 px-4 rounded w-40 ">
+                                    Guardar 
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>-->
+
+
+        </div>
+
+       
+     
+    
+    </div>
+    
+   
+    <footer class="footer">
+        <div class="grid grid-cols-4 gap-5 mb-2">
+            <div class="flex justify-center ">
+              
+            </div>
+
+
+            <div class="flex justify-center ">
+                <button id = "process-btn-banco" class="bg-red-700 hover:bg-gray-800 text-white  hover:text-white hover:border-red-700 font-bold py-2 px-4 rounded w-full shadow-2xl rounded-full">
+                    Procesar
+                </button>
+            </div>
+
+            <div class="flex justify-center">
+                <button id = "process-btn-banco" class="bg-red-700 hover:bg-gray-800 text-white  hover:text-white hover:border-red-700 font-bold py-2 px-4 rounded w-full shadow-2xl rounded-full">
+                    Guardar
+                </button>
+            </div>
+        </div>
+        <div class="flex justify-center ">
+           
+        </div>
+
+
+
+
+            <div class="flex justify-center mt-5">
+                <button class="bg-red-700 hover:bg-gray-800 text-white  hover:text-white hover:border-red-700 font-bold py-2 px-4 rounded w-2/4 shadow-2xl rounded-full">
+                    GENERAR DOCUMENTO
+                </button>
+            </div>
+        </div>
+        <div class="container mx-auto px-6">
+            <div class="mt-16 flex flex-col items-center">
+                <div class="sm:w-2/3 text-center py-6">
+                    <p class="text-sm text-gray-800 font-bold mb-2">
+                        ©Copyright 2021 by DT-DATA
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="compa.js"></script>
+    <script src= 'aux.js'></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js%22%3E</script> -->
+</body>
+
+</html>
